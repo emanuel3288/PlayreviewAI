@@ -1,0 +1,10 @@
+{
+  "name": "appinsight-vercel-backend",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "dependencies": {
+    "google-play-scraper": "^9.2.0",
+    "jose": "^6.1.0"
+  }
+}

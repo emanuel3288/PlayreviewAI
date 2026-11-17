@@ -1,0 +1,6 @@
+# Copiá este archivo como signing.properties y completá los valores.
+# Nunca subas signing.properties ni el archivo .jks al repositorio.
+storeFile=keystores/playreview-upload.jks
+storePassword=CAMBIAR_POR_UN_SECRETO
+keyAlias=playreview-upload
+keyPassword=CAMBIAR_POR_UN_SECRETO

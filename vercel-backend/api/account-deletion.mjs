@@ -1,0 +1,7 @@
+const page = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Eliminar cuenta | PlayReview AI</title><style>body{font-family:system-ui,sans-serif;line-height:1.6;color:#172033;background:#f8fafc;margin:0}main{max-width:720px;margin:auto;padding:40px 24px}h1{color:#172554}a{color:#1d4ed8}</style></head><body><main><h1>Eliminar cuenta de PlayReview AI</h1><p>La forma más rápida es abrir PlayReview AI, iniciar sesión y elegir <strong>Eliminar mi cuenta</strong> en el menú de la cuenta.</p><p>También podés solicitar la eliminación escribiendo a <a href="mailto:ema25met@gmail.com?subject=Eliminar%20cuenta%20de%20PlayReview%20AI">ema25met@gmail.com</a> desde el correo asociado a tu cuenta. Eliminaremos la cuenta y los datos asociados del servicio.</p><p>Para prevenir abusos, puede conservarse un identificador técnico irreversible del email verificado y el consumo de créditos gratuitos del día. No se conserva el email en ese registro.</p><p>La eliminación no se puede deshacer.</p></main></body></html>`;
+
+export default function handler(request, response) {
+  if (request.method !== 'GET' && request.method !== 'HEAD') return response.status(405).send('Método no permitido');
+  response.setHeader('Content-Type', 'text/html; charset=utf-8');
+  return response.status(200).send(request.method === 'HEAD' ? '' : page);
+}
